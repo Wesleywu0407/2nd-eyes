@@ -4,9 +4,13 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>About — 2nd eyes</title>
-        <link rel="stylesheet" href="../css/style.css" />
 
+        <link rel="stylesheet" href="../css/base.css" />
+        <link rel="stylesheet" href="../css/layout.css" />
+        <link rel="stylesheet" href="../css/components.css" />
+        <link rel="stylesheet" href="../css/pages/about.css" />
     </head>
+
     <body>
         <header class="site-header">
             <div class="container header-inner">
@@ -25,17 +29,11 @@
         </header>
 
         <main>
-            <!-- PAGE HEADER (unique to About) -->
-            <section class="page-head">
-                <div class="container">
-                    <h1>About</h1>
-                    <p class="muted">
-                        Why I shoot film, and what I’m learning.
-                    </p>
-                </div>
+            <section class="hero">
+                <h1 class="hero-title">2ND EYES</h1>
+                <p class="hero-sub">A second look at ordinary life.</p>
             </section>
 
-            <!-- ABOUT STORY (unique to About) -->
             <section class="section">
                 <div class="container two-col">
                     <article class="card">
@@ -46,7 +44,7 @@
                             archive — places, people, and the feeling of a day.
                         </p>
                         <p class="muted">
-                            I’m currently based in Australia and I document
+                            I'm currently based in Australia and I document
                             everyday moments like a travel diary.
                         </p>
                     </article>
@@ -66,7 +64,6 @@
                 </div>
             </section>
 
-            <!-- GEAR SECTION (unique to About) -->
             <section class="section alt" id="gear">
                 <div class="container">
                     <div class="section-head">
@@ -102,7 +99,6 @@
                 </div>
             </section>
 
-            <!-- CONTACT (unique to About) -->
             <section class="section" id="contact">
                 <div class="container">
                     <div class="section-head">
@@ -113,19 +109,54 @@
                     </div>
 
                     <div class="card">
-                        <p><strong>Instagram</strong>: @2ndeyes</p>
-                        <p><strong>Email</strong>: you@example.com</p>
+                        <p><strong>Instagram</strong>: @2nd1yes</p>
+                        <p>
+                            <strong>Email</strong>: wesleyclwuhoward@gmail.com
+                        </p>
                     </div>
                 </div>
             </section>
         </main>
 
-        <footer class="footer">
-            <div class="container">
-                <p class="muted">© <span id="year"></span> 2nd eyes • About</p>
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <a class="footer-logo" href="../index.html">2nd eyes</a>
+                        <p class="footer-desc">
+                            Personal film diary documenting everyday moments.
+                        </p>
+                    </div>
+
+                    <div class="footer-col">
+                        <p class="footer-heading">Navigate</p>
+                        <nav class="footer-nav">
+                            <a href="../index.html">Home</a>
+                            <a href="gallery.html">Gallery</a>
+                            <a href="notes.html">Film Notes</a>
+                            <a href="about.html">About</a>
+                        </nav>
+                    </div>
+
+                    <div class="footer-col">
+                        <p class="footer-heading">Film Stocks</p>
+                        <div class="footer-list">
+                            <p>Kodak Gold 200</p>
+                            <p>Kodak Portra 400</p>
+                            <p>Fujifilm Pro 400H</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>
+                        © <span id="year"></span> 2nd eyes • All photographs
+                        shot on film
+                    </p>
+                </div>
             </div>
         </footer>
 
-        <script src="app.js"></script>
+        <script src="../app.js"></script>
     </body>
 </html>

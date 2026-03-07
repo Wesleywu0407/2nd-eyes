@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Gallery — 2nd eyes</title>
-        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/base.css" />
+        <link rel="stylesheet" href="../css/layout.css" />
+        <link rel="stylesheet" href="../css/components.css" />
+        <link rel="stylesheet" href="../css/pages/gallery.css" />
     </head>
+
     <body>
         <header class="site-header">
             <div class="container header-inner">
@@ -24,61 +29,163 @@
         </header>
 
         <main>
-            <section class="page-head">
+            <!-- HERO -->
+            <section class="gallery-hero">
                 <div class="container">
-                    <h1>Gallery</h1>
-                    <p class="muted">Quiet frames, warm grains.</p>
+                    <p class="gallery-kicker">Film • 35mm & 120</p>
+                    <h1>Recent Works</h1>
+                    <p class="gallery-sub">Selected photographs from 2025</p>
                 </div>
             </section>
-
-            <section class="section">
-                <div class="container film-frame">
-                    <div class="film-inner">
-                        <div class="gallery-grid">
-                            <a class="photo-tile" href="#">
-                                <img
-                                    src="../assets/sample-1.jpg"
-                                    alt="photo 1"
-                                />
-                            </a>
-                            <a class="photo-tile" href="#">
-                                <img
-                                    src="../assets/sample-2.jpg"
-                                    alt="photo 2"
-                                />
-                            </a>
-                            <a class="photo-tile" href="#">
-                                <img
-                                    src="../assets/sample-3.jpg"
-                                    alt="photo 3"
-                                />
-                            </a>
-                            <a class="photo-tile" href="#">
-                                <img
-                                    src="../assets/sample-4.jpg"
-                                    alt="photo 4"
-                                />
-                            </a>
-                            <a class="photo-tile" href="#">
-                                <img
-                                    src="../assets/sample-5.jpg"
-                                    alt="photo 5"
-                                />
-                            </a>
-                            <a class="photo-tile" href="#">
-                                <img
-                                    src="../assets/sample-6.jpg"
-                                    alt="photo 6"
-                                />
-                            </a>
-                        </div>
+        
+            <!-- GALLERY -->
+            <section class="editorial-gallery">
+                <div class="container">
+                    <div class="gallery-grid">
+        
+                        <!-- MAIN HERO PHOTO -->
+                        <article class="gallery-item large">
+                            <span class="gallery-tag">Gold 200</span>
+                            <img
+                                src="../assets/IMG_9638.JPG"
+                                alt="Beach scene"
+                                loading="lazy"
+                            />
+                        </article>
+                        <article class="gallery-item large">
+                            <span class="gallery-tag">Gold 200</span>
+                            <img
+                                src="../assets/melbourne/melstreet.jpg"
+                                alt="Beach scene"
+                                loading="lazy"
+                            />
+                        </article>
+                        <article class="gallery-item large">
+                            <span class="gallery-tag">Gold 200</span>
+                            <img
+                                src="../assets/melbourne/IMG_0764.JPG"
+                                alt="Beach scene"
+                                loading="lazy"
+                            />
+                        </article>
+        
+                        <!-- SMALL RIGHT -->
+                        <article class="gallery-item medium">
+                            <span class="gallery-tag">Portra 160</span>
+                            <img
+                                src="../assets/IMG_9656.JPG"
+                                alt="Boat on river"
+                                loading="lazy"
+                            />
+                        </article>
+                        <article class="gallery-item medium">
+                            <span class="gallery-tag">Portra 160</span>
+                            <img
+                                src="../assets/melbourne/46862ED3-DB2B-48BE-8Cmelb14-8D5207CDA0DD.JPG"
+                                alt="Boat on river"
+                                loading="lazy"
+                            />
+                        </article>
+        
+                        <!-- TALL RIGHT -->
+                        <article class="gallery-item tall">
+                            <span class="gallery-tag">Fuji 400</span>
+                            <img
+                                src="../assets/IMG_9652.JPG"
+                                alt="Bridge view"
+                                loading="lazy"
+                            />
+                        </article>
+                        <article class="gallery-item tall">
+                            <span class="gallery-tag">Fuji 400</span>
+                            <img
+                                src="../assets/melbourne/IMG_0758.JPG"
+                                alt="Bridge view"
+                                loading="lazy"
+                            />
+                        </article>
+        
+                        <!-- TEXT BLOCK -->
+                        <article class="gallery-text-block">
+                            <p>
+                                Film photography slows everything down — the light,
+                                the waiting, and the small moments you might otherwise
+                                miss.
+                            </p>
+                        </article>
+        
+                        <!-- WIDE PHOTO -->
+                        <article class="gallery-item wide">
+                            <span class="gallery-tag">Ektar 100</span>
+                            <img
+                                src="../assets/IMG_9657.JPG"
+                                alt="Sunset sky"
+                                loading="lazy"
+                            />
+                        </article>
+                        <article class="gallery-item wide">
+                            <span class="gallery-tag">Ektar 100</span>
+                            <img
+                                src="../assets/melbourne/IMG_0762.JPG"
+                                alt="Sunset sky"
+                                loading="lazy"
+                            />
+                        </article>
+        
+                        <!-- EXTRA PHOTO -->
+                        <article class="gallery-item medium">
+                            <span class="gallery-tag">Tri-X 400</span>
+                            <img
+                                src="../assets/IMG_9654.JPG"
+                                alt="Tree texture"
+                                loading="lazy"
+                            />
+                        </article>
+        
                     </div>
                 </div>
             </section>
         </main>
 
-        <footer class="footer">
-            <div class="container muted">© 2nd eyes — film diary</div>
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <a class="footer-logo" href="../index.html">2nd eyes</a>
+                        <p class="footer-desc">
+                            Personal film diary documenting everyday moments.
+                        </p>
+                    </div>
+
+                    <div class="footer-col">
+                        <p class="footer-heading">Navigate</p>
+                        <nav class="footer-nav">
+                            <a href="../index.html">Home</a>
+                            <a href="gallery.html">Gallery</a>
+                            <a href="notes.html">Film Notes</a>
+                            <a href="about.html">About</a>
+                        </nav>
+                    </div>
+
+                    <div class="footer-col">
+                        <p class="footer-heading">Film Stocks</p>
+                        <div class="footer-list">
+                            <p>Kodak Gold 200</p>
+                            <p>Kodak Portra 400</p>
+                            <p>Fujifilm Pro 400H</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>
+                        © <span id="year"></span> 2nd eyes • All photographs
+                        shot on film
+                    </p>
+                </div>
+            </div>
         </footer>
+
+        <script src="../app.js"></script>
     </body>
 </html>

@@ -4,20 +4,27 @@
 }
 
 /* header */
+
 .site-header {
-    position: sticky;
+    position: fixed; /* <- fixed 才是永遠固定 */
     top: 0;
-    background: rgba(18, 12, 9, 0.7);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    z-index: 10;
+    left: 0; /* 保險 */
+    right: 0; /* 保險 */
+    width: 100%; /* 重點：整條滿版 */
+    display: block; /* 保險 */
+
+    background: #5a4a3a; /* 你想要的那個深棕 */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+    backdrop-filter: none; /* 不要 blur */
+    z-index: 1000;
 }
 
 .header-inner {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 14px 0;
+    justify-content: space-between;
+    padding: 18px 0;
 }
 
 /* section */
@@ -27,10 +34,4 @@
 
 .page-head {
     padding: 32px 0 12px;
-}
-
-.footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    padding: 28px 0 40px;
-    margin-top: 40px;
 }

@@ -1,32 +1,41 @@
 /* brand */
 .brand {
-    font-size: 1.6rem; 
-    display: flex;
-    gap: 8px;
+    color: rgba(255, 255, 255, 0.88); /* 米白 */
     font-weight: 700;
+    letter-spacing: 0.2px;
+}
+.brand-mark {
+    color: inherit;
 }
 
-.brand-mark {
-    color: var(--accent);
+.brand-name {
+    color: #ffffff;
 }
 
 /* nav */
 .nav {
     display: flex;
-    gap: 16px;
+    gap: 36px;
+    flex-wrap: nowrap;
 }
 
 .nav a {
-    padding: 8px 10px;
-    border-radius: 999px;
-    font-size: 14px;
-    color: rgba(243, 233, 221, 0.8);
+    color: rgba(255, 255, 255, 0.75);
+    padding: 0; /* 不要 pill */
+    border-radius: 0;
+    background: transparent;
+    text-decoration: none;
 }
 
-.nav a.active,
 .nav a:hover {
-    color: var(--text);
-    background: rgba(201, 163, 106, 0.12);
+    color: rgba(255, 255, 255, 0.92);
+    text-decoration: none; /* 重要：壓掉你全域 a:hover 的 underline */
+}
+
+.nav a.active {
+    color: rgba(255, 255, 255, 0.92);
+    font-weight: 600;
+    text-decoration: none;
 }
 
 /* buttons */
@@ -52,17 +61,9 @@
 }
 
 .film-frame {
-    position: relative;
-    border-radius: var(--radius);
-    background: linear-gradient(
-            180deg,
-            rgba(255, 255, 255, 0.04),
-            transparent 40%
-        ),
-        var(--paper);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--paper);
+    border: 1px solid var(--border);
     box-shadow: var(--shadow);
-    overflow: hidden;
 }
 
 /* film holes (left side) */
@@ -85,4 +86,115 @@
 /* inner padding zone */
 .film-frame .film-inner {
     padding: 18px 18px 18px 36px;
+}
+
+.title-link {
+    display: inline-block;
+    transition: transform 0.18s ease, opacity 0.18s ease;
+    transform-origin: left center;
+}
+.title-link:hover {
+    transform: scale(1.03);
+}
+
+/* ======================
+   Footer
+   ====================== */
+
+   .site-footer {
+    background: #231d1a;
+    color: rgba(255, 255, 255, 0.82);
+    padding: 56px 0 28px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.footer-logo {
+    font-family: var(--font-serif);
+    font-size: 28px;
+    font-weight: 600;
+    color: #f5efe7;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 18px;
+}
+
+.footer-desc {
+    margin: 0;
+    max-width: 16ch;
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-heading {
+    margin: 0 0 18px;
+    font-family: var(--font-sans);
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: rgba(201, 163, 106, 0.7);
+}
+
+.footer-nav,
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-nav a,
+.footer-list p {
+    margin: 0;
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.78);
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    color: #c9a36a;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 28px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-family: var(--font-sans);
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.56);
+}
+
+/* responsive */
+@media (max-width: 900px) {
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .footer-desc {
+        max-width: 28ch;
+    }
+
+    .footer-bottom {
+        text-align: left;
+    }
 }

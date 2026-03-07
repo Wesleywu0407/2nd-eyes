@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+            rel="stylesheet"
+        />
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>2nd eyes — Film Diary</title>
@@ -27,86 +33,281 @@
         </header>
 
         <main>
-            <!-- HERO (unique to Home) -->
-            <section class="hero">
-                <div class="container hero-inner">
-                    <div class="hero-text">
-                        <h1>Film photos & small stories.</h1>
-                        <p class="muted">
-                            A personal film diary — where I’ve been, and how it
-                            felt.
+            <!-- HERO (editorial) -->
+            <section class="home-hero">
+                <div class="container home-hero-inner">
+                    <div class="hero-left">
+                        <p class="hero-kicker">
+                            EST. 2024 — PERSONAL FILM ARCHIVE
                         </p>
-                        <div class="hero-actions">
-                            <a class="btn" href="html/gallery.html"
-                                >View Gallery</a
-                            >
-                            <a class="btn ghost" href="html/notes.html"
-                                >Read Film Notes</a
-                            >
-                        </div>
+                        <h1 class="hero-title">
+                            2ND<br />
+                            EYES
+                        </h1>
                     </div>
 
-                    <!-- FEATURED ROLL CARD (unique to Home) -->
-                    <aside class="featured-roll">
-                        <div class="featured-top">
-                            <span class="tag">Featured Roll</span>
-                            <span class="tag">ISO 400</span>
-                        </div>
-                        <h2 class="featured-title">Sydney — quiet arvo</h2>
-                        <p class="muted featured-sub">
-                            Kodak • Canon autoboyminT • Dec 2025
+                    <div class="hero-right">
+                        <div class="hero-rule"></div>
+                        <p class="hero-lede">
+                            A second look at ordinary life through analog
+                            photography. Documenting quiet moments, honest
+                            light, and the beauty of film grain.
                         </p>
-                        <a class="link" href="html/notes.html#roll-01"
-                            >Open this roll →</a
-                        >
+
+                        <div class="hero-meta">
+                            <div class="meta-block">
+                                <p class="meta-label">Location</p>
+                                <p class="meta-value">Brisbane, AU</p>
+                            </div>
+                            <span class="meta-divider"></span>
+                            <div class="meta-block">
+                                <p class="meta-label">Format</p>
+                                <p class="meta-value">35mm Film</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- STATEMENT -->
+            <section class="home-statement">
+                <div class="container statement-inner">
+                    <div class="statement-left">
+                        <p class="statement-text">
+                            I shoot film to slow down. I like the waiting, the
+                            mistakes, and the surprise. This site is my small
+                            archive — places, people, and the feeling of a day.
+                        </p>
+                    </div>
+
+                    <aside class="statement-right">
+                        <p class="side-kicker">CURRENT SETUP</p>
+
+                        <div class="side-item">
+                            <p class="side-label">Camera</p>
+                            <p class="side-value">Canon Autoboy Mini T</p>
+                        </div>
+
+                        <div class="side-item">
+                            <p class="side-label">Film Stock</p>
+                            <p class="side-value">Kodak Gold 200</p>
+                        </div>
                     </aside>
                 </div>
             </section>
 
-            <!-- QUICK START (unique to Home) -->
-            <section class="section">
+            <!-- FEATURED ROLL -->
+            <section class="home-featured">
+                <div class="container featured-inner">
+                    <header class="featured-head">
+                        <div>
+                            <p class="featured-kicker">FEATURED</p>
+                            <h2 class="featured-title">Sydney — quiet arvo</h2>
+                        </div>
+                        <p class="featured-date">Roll #12 — Dec 2025</p>
+                    </header>
+
+                    <div class="featured-body">
+                        <div class="featured-text">
+                            <div class="featured-toprule"></div>
+
+                            <p class="featured-spec">
+                                Kodak Gold 200 <span>•</span> Canon Autoboy
+                                <span>•</span> ISO 200
+                            </p>
+
+                            <p class="featured-desc">
+                                The afternoon light filtered through the
+                                harbour, casting long shadows across the Opera
+                                House. There’s something about Sydney in
+                                December — the warmth, the stillness between the
+                                city’s pulse.
+                            </p>
+
+                            <a
+                                class="featured-link"
+                                href="html/notes.html#roll-01"
+                            >
+                                View full roll <span class="arrow">›</span>
+                            </a>
+                        </div>
+
+                        <div class="featured-grid">
+                            <a class="shot" href="html/gallery.html">
+                                <img
+                                    src="assets/sydney/IMG_2700.JPG"
+                                    alt="Sydney shot 1"
+                                />
+                            </a>
+                            <a class="shot" href="html/gallery.html">
+                                <img
+                                    src="assets/sydney/IMG_2701.JPG"
+                                    alt="Sydney shot 2"
+                                />
+                            </a>
+                            <a class="shot" href="html/gallery.html">
+                                <img
+                                    src="assets/syd1.jpg"
+                                    alt="Sydney shot 3"
+                                />
+                            </a>
+                            <a class="shot" href="html/gallery.html">
+                                <img
+                                    src="assets/river1.jpg"
+                                    alt="Sydney shot 4"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- START HERE (像 Figma 的三條深色選單) -->
+            <!-- START HERE (像 Figma 的三條深色選單) -->
+            <section class="home-start">
                 <div class="container">
                     <div class="section-head">
                         <h2>Start here</h2>
                         <p class="muted">Pick what you want to see today.</p>
                     </div>
 
-                    <div class="cards">
-                        <article class="card">
-                            <h3>Latest shots</h3>
-                            <p class="muted">
-                                Jump into the newest photos in the gallery.
-                            </p>
-                            <a class="btn small" href="html/gallery.html#latest"
-                                >Go</a
-                            >
-                        </article>
+                    <div class="start-list">
+                        <a class="start-item" href="html/gallery.html#latest">
+                            <div class="start-left">
+                                <span class="start-icon" aria-hidden="true">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <rect
+                                            x="4"
+                                            y="5"
+                                            width="16"
+                                            height="14"
+                                            rx="2"
+                                        ></rect>
+                                        <circle cx="9" cy="10" r="1.4"></circle>
+                                        <path
+                                            d="M20 16l-5.2-5.2a1 1 0 0 0-1.4 0L7 17"
+                                        ></path>
+                                    </svg>
+                                </span>
+                                <div>
+                                    <h3>Gallery</h3>
+                                    <p>
+                                        Jump into the newest photos in the
+                                        gallery.
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="start-arrow">›</span>
+                        </a>
 
-                        <article class="card">
-                            <h3>Roll stories</h3>
-                            <p class="muted">
-                                One roll, one story. Lessons + keepers.
-                            </p>
-                            <a class="btn small" href="html/notes.html">Go</a>
-                        </article>
+                        <a class="start-item" href="html/notes.html">
+                            <div class="start-left">
+                                <span class="start-icon" aria-hidden="true">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <path
+                                            d="M4 6.5A2.5 2.5 0 0 1 6.5 4H11v16H6.5A2.5 2.5 0 0 0 4 22z"
+                                        ></path>
+                                        <path
+                                            d="M20 6.5A2.5 2.5 0 0 0 17.5 4H13v16h4.5A2.5 2.5 0 0 1 20 22z"
+                                        ></path>
+                                    </svg>
+                                </span>
+                                <div>
+                                    <h3>Film Notes</h3>
+                                    <p>
+                                        One roll, one story. Lessons + keepers.
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="start-arrow">›</span>
+                        </a>
 
-                        <article class="card">
-                            <h3>My gear list</h3>
-                            <p class="muted">
-                                Cameras, film stocks, and what I learned.
-                            </p>
-                            <a class="btn small" href="html/about.html#gear">Go</a>
-                        </article>
+                        <a class="start-item" href="html/about.html#gear">
+                            <div class="start-left">
+                                <span class="start-icon" aria-hidden="true">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <path
+                                            d="M4 8h3l1.4-2h7.2L17 8h3a1 1 0 0 1 1 1v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a1 1 0 0 1 1-1z"
+                                        ></path>
+                                        <circle
+                                            cx="12"
+                                            cy="13"
+                                            r="3.2"
+                                        ></circle>
+                                    </svg>
+                                </span>
+                                <div>
+                                    <h3>Setup &amp; Gear</h3>
+                                    <p>
+                                        Cameras, film stocks, and what I
+                                        learned.
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="start-arrow">›</span>
+                        </a>
                     </div>
                 </div>
             </section>
         </main>
 
-        <footer class="footer">
-            <div class="container">
-                <p class="muted">
-                    © <span id="year"></span> 2nd eyes • Film diary
-                </p>
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <a class="footer-logo" href="index.html">2nd eyes</a>
+                        <p class="footer-desc">
+                            Personal film diary documenting everyday moments.
+                        </p>
+                    </div>
+
+                    <div class="footer-col">
+                        <p class="footer-heading">Navigate</p>
+                        <nav class="footer-nav">
+                            <a href="index.html">Home</a>
+                            <a href="html/gallery.html">Gallery</a>
+                            <a href="html/notes.html">Film Notes</a>
+                            <a href="html/about.html">About</a>
+                        </nav>
+                    </div>
+
+                    <div class="footer-col">
+                        <p class="footer-heading">Film Stocks</p>
+                        <div class="footer-list">
+                            <p>Kodak Gold 200</p>
+                            <p>Kodak Portra 400</p>
+                            <p>Fujifilm Pro 400H</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>
+                        © <span id="year"></span> 2nd eyes • All photographs
+                        shot on film
+                    </p>
+                </div>
             </div>
         </footer>
 

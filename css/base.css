@@ -1,49 +1,62 @@
 :root {
+    --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+    --font-serif: "Playfair Display", Georgia, serif;
     /* background */
-    --bg: #161311; /* 原 #120c09 太黑 */
-    --bg-soft: #1d1916; /* 原 #19110d */
+    --bg: #f6efe6; /* 奶油白 */
+    --bg-soft: #efe4d7; /* 淺一階 */
 
-    /* paper / card */
-    --paper: #201b17; /* 原 #1f1510 偏黑硬 */
-    --paper-soft: #27211c;
+    /* paper/card */
+    --paper: #ffffff; /* 卡片白 */
+    --paper-soft: #fbf6ef;
 
     /* text */
-    --text: #e7dfd6; /* 原 #f3e9dd 太亮刺 */
-    --muted: rgba(231, 223, 214, 0.72);
+    --text: #1a1a1a; /* 深灰黑 */
+    --muted: rgba(26, 26, 26, 0.62);
 
-    /* accent (film gold) */
-    --accent: #c9a36a;
-    --line: rgba(201, 163, 106, 0.2);
+    /* accent (coffee / film) */
+    --accent: #6b4a34; /* 咖啡色 */
+    --line: rgba(107, 74, 52, 0.18);
 
     /* layout */
     --radius: 18px;
     --max-width: 1100px;
 
-    /* shadow */
-    --shadow: 0 18px 50px rgba(0, 0, 0, 0.5);
+    /* shadow (更乾淨，別太黑) */
+    --shadow: 0 18px 50px rgba(0, 0, 0, 0.08);
+
+    /* borders */
+    --border: rgba(0, 0, 0, 0.1);
+    --border-strong: rgba(0, 0, 0, 0.18);
 }
 
 * {
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        sans-serif;
-    background: radial-gradient(
-            800px 400px at 20% 0%,
-            rgba(201, 163, 106, 0.08),
-            transparent 60%
-        ),
-        linear-gradient(180deg, var(--bg), #141110);
-    color: var(--text);
-    line-height: 1.6;
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+    margin: 0;
+    font-family: "Inter", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    padding-top: 64px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/* 全站連結：不要底線，hover 才有變化 */
 a {
     color: inherit;
     text-decoration: none;
+}
+a:hover {
+    text-decoration: none; /* 你說不要底線 */
 }
 
 img {
@@ -55,25 +68,24 @@ img {
     color: var(--muted);
 }
 
-/* film grain overlay */
+/* NEW: film grain (more organic, less “scanline”) */
 body::before {
     content: "";
     position: fixed;
     inset: 0;
     pointer-events: none;
     z-index: 9999;
-    opacity: 0.07;
-    mix-blend-mode: soft-light;
-    background-image: repeating-linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 0.03),
-        rgba(255, 255, 255, 0.03) 1px,
-        transparent 1px,
-        transparent 3px
-    );
+    opacity: 0.06;
+    mix-blend-mode: normal;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.40'/%3E%3C/svg%3E");
 }
 
 /* subtle selection */
 ::selection {
     background: rgba(201, 163, 106, 0.18);
+}
+
+h1, h2, h3 {
+    font-family: "Cormorant Garamond", serif;
+    letter-spacing: -0.02em;
 }
