@@ -1,0 +1,21 @@
+{
+  "name": "2nd eyes",
+  "short_name": "2nd eyes",
+  "description": "Personal film diary documenting everyday moments.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f6efe6",
+  "theme_color": "#5a4a3a",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
