@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Film Notes — 2nd eyes</title>
@@ -24,7 +25,6 @@
         </header>
 
         <main>
-            <!-- PAGE HEADER (unique to Notes) -->
             <section class="page-head">
                 <div class="container">
                     <h1>Film Notes</h1>
@@ -34,118 +34,59 @@
                 </div>
             </section>
 
-            <!-- ROLL LIST (unique to Notes) -->
-            <section class="section">
+            <section class="section notes-section">
                 <div class="container">
-                    <div class="roll-list">
-                        <article class="roll" id="roll-01">
-                            <header class="roll-head">
-                                <h2>Roll #01 — Sydney</h2>
-                                <p class="muted">
-                                    Fuji 400 • Olympus • ISO 400 • Dec 2025
+                    <div class="notes-list">
+                        <article class="roll-card" id="roll-12" data-tilt>
+                            <div class="roll-card-left">
+                                <h2>Roll #12 — Sydney</h2>
+                                <p class="roll-meta">
+                                    Fuji 400 ・ Olympus ・ ISO 400 ・ Dec 2025
                                 </p>
-                            </header>
+                                <p class="roll-summary">
+                                    Summer days around the harbour. Tried
+                                    shooting wide open most of the time —
+                                    some hits, some misses.
+                                </p>
+                                <a class="roll-link" href="gallery.html">
+                                    Choose 3–8 photos later (we'll connect to
+                                    Gallery with JS next step)
+                                    <span aria-hidden="true">›</span>
+                                </a>
+                            </div>
 
-                            <div class="roll-body">
-                                <div class="roll-block">
-                                    <h3>What I tried</h3>
-                                    <ul>
-                                        <li>
-                                            Meter for highlights near sunset
-                                        </li>
-                                        <li>
-                                            Backlight portraits with slight
-                                            overexposure
-                                        </li>
-                                        <li>
-                                            One subject per frame (slower
-                                            shooting)
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="roll-block">
-                                    <h3>Mistakes</h3>
-                                    <ul>
-                                        <li>Underexposed 2 frames in shade</li>
-                                        <li>
-                                            Focus missed on 1 portrait (too
-                                            rushed)
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="roll-block">
-                                    <h3>Keepers</h3>
-                                    <p class="muted">
-                                        Choose 3–8 photos later (we’ll connect
-                                        to Gallery with JS next step).
-                                    </p>
-                                    <a class="btn small" href="gallery.html"
-                                        >See photos</a
-                                    >
-                                </div>
+                            <div class="roll-strip" aria-hidden="true">
+                                <img src="../assets/sydney/IMG_2700.JPG" alt="" data-tilt />
+                                <img src="../assets/sydney/IMG_2701.JPG" alt="" data-tilt />
+                                <img src="../assets/sydney/IMG_2702.JPG" alt="" data-tilt />
                             </div>
                         </article>
 
-                        <article class="roll" id="roll-02">
-                            <header class="roll-head">
-                                <h2>Roll #02 — Brisbane</h2>
-                                <p class="muted">
-                                    Kodak Gold 200 • Canon • ISO 200 • Dec 2025
+                        <article class="roll-card" id="roll-11" data-tilt>
+                            <div class="roll-card-left">
+                                <h2>Roll #11 — Weekend</h2>
+                                <p class="roll-meta">
+                                    Kodak Gold 200 ・ Canon Autoboy ・ ISO 200 ・
+                                    Nov 2025
                                 </p>
-                            </header>
+                                <p class="roll-summary">
+                                    Quiet weekend around the neighbourhood.
+                                    Golden hour shots, nothing fancy. Just
+                                    documenting the ordinary.
+                                </p>
+                                <a class="roll-link" href="gallery.html">
+                                    Choose 3–8 photos later (we'll connect to
+                                    Gallery with JS next step)
+                                    <span aria-hidden="true">›</span>
+                                </a>
+                            </div>
 
-                            <div class="roll-body">
-                                <div class="roll-block">
-                                    <h3>Light notes</h3>
-                                    <p class="muted">
-                                        Morning shadows were harsh. Next time
-                                        I’ll shoot closer to golden hour.
-                                    </p>
-                                </div>
-
-                                <div class="roll-block">
-                                    <h3>Next roll plan</h3>
-                                    <ul>
-                                        <li>Try +1 exposure indoors</li>
-                                        <li>Use slower pace, fewer shots</li>
-                                        <li>Write settings after each scene</li>
-                                    </ul>
-                                </div>
+                            <div class="roll-strip" aria-hidden="true">
+                                <img src="../assets/sea1.jpg" alt="" data-tilt />
+                                <img src="../assets/IMG_9658.JPG" alt="" data-tilt />
+                                <img src="../assets/IMG_9655.JPG" alt="" data-tilt />
                             </div>
                         </article>
-                    </div>
-                </div>
-            </section>
-            <section class="roll" id="roll-01">
-                <div class="container">
-                    <header class="roll-head">
-                        <h2>Sydney — quiet arvo</h2>
-                        <p class="muted">Fuji 400 · Olympus · Dec 2025</p>
-                    </header>
-
-                    <div class="roll-grid">
-                        <figure class="roll-photo">
-                            <img
-                                src="../images/sydney/IMG_2700.JPG"
-                                alt="Sydney street, quiet afternoon"
-                            />
-                        </figure>
-
-                        <figure class="roll-photo">
-                            <img
-                                src="../images/sydney/IMG_2701.JPG"
-                                alt="Sydney light and shadows"
-                            />
-                        </figure>
-
-                        <figure class="roll-photo">
-                            <img
-                                src="../images/sydney/IMG_2702.JPG"
-                                alt="Sydney arvo on film"
-                            />
-                        </figure>
                     </div>
                 </div>
             </section>
@@ -160,7 +101,7 @@
                             Personal film diary documenting everyday moments.
                         </p>
                     </div>
-        
+
                     <div class="footer-col">
                         <p class="footer-heading">Navigate</p>
                         <nav class="footer-nav">
@@ -170,7 +111,7 @@
                             <a href="about.html">About</a>
                         </nav>
                     </div>
-        
+
                     <div class="footer-col">
                         <p class="footer-heading">Film Stocks</p>
                         <div class="footer-list">
@@ -180,13 +121,13 @@
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="footer-bottom">
                     <p>© <span id="year"></span> 2nd eyes • All photographs shot on film</p>
                 </div>
             </div>
         </footer>
 
-        <script src="app.js"></script>
+        <script src="../app.js"></script>
     </body>
 </html>

@@ -89,3 +89,47 @@ h1, h2, h3 {
     font-family: "Cormorant Garamond", serif;
     letter-spacing: -0.02em;
 }
+
+/* custom cursor (desktop only) */
+@media (hover: hover) and (pointer: fine) {
+    html.has-custom-cursor,
+    html.has-custom-cursor body,
+    html.has-custom-cursor a,
+    html.has-custom-cursor button,
+    html.has-custom-cursor input,
+    html.has-custom-cursor textarea,
+    html.has-custom-cursor select,
+    html.has-custom-cursor [role="button"] {
+        cursor: none !important;
+    }
+
+    .custom-cursor {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 10000;
+        transform: translate(-50%, -50%);
+        background: rgba(107, 74, 52, 0.26);
+        border: 1px solid rgba(107, 74, 52, 0.6);
+        box-shadow: 0 0 0 8px rgba(107, 74, 52, 0.08);
+        transition: width 160ms ease, height 160ms ease, background 160ms ease,
+            border-color 160ms ease, box-shadow 160ms ease, opacity 160ms ease;
+        opacity: 0;
+    }
+
+    .custom-cursor.is-visible {
+        opacity: 1;
+    }
+
+    .custom-cursor.is-active {
+        width: 30px;
+        height: 30px;
+        background: rgba(201, 163, 106, 0.34);
+        border-color: rgba(201, 163, 106, 0.95);
+        box-shadow: 0 0 0 12px rgba(201, 163, 106, 0.14);
+    }
+}
