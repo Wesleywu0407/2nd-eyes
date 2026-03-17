@@ -45,9 +45,9 @@
                         <p class="hero-kicker">
                             EST. 2024 — PERSONAL FILM ARCHIVE
                         </p>
-                        <h1 class="hero-title">
-                            2ND<br />
-                            EYES
+                        <h1 class="hero-title" data-hero-title>
+                            <span class="hero-title-line">2ND</span>
+                            <span class="hero-title-line">EYES</span>
                         </h1>
                     </div>
 
@@ -101,67 +101,139 @@
                 </div>
             </section>
 
-            <!-- FEATURED ROLL -->
-            <section class="home-featured">
+            <!-- RECENT WORK / STORY -->
+            <section class="home-featured" data-story-gallery>
                 <div class="container featured-inner">
                     <header class="featured-head">
                         <div>
-                            <p class="featured-kicker">FEATURED</p>
-                            <h2 class="featured-title">Sydney — quiet arvo</h2>
+                            <p class="featured-kicker">RECENT WORK</p>
+                            <h2 class="featured-title">A quiet archive of recent rolls</h2>
                         </div>
-                        <p class="featured-date">Roll #12 — Dec 2025</p>
+                        <p class="featured-date">Curated film diary — 2025</p>
                     </header>
 
-                    <div class="featured-body">
-                        <div class="featured-text">
-                            <div class="featured-toprule"></div>
+                    <div class="featured-story">
+                        <div class="featured-stage">
+                            <div class="featured-stage-inner">
+                                <figure
+                                    class="featured-stage-image is-active"
+                                    data-story-panel="0"
+                                >
+                                    <img
+                                        src="assets/sydney/IMG_2701.JPG"
+                                        alt="Sydney harbour light in late afternoon"
+                                    />
+                                    <figcaption>
+                                        Sydney harbour, late light and still water.
+                                    </figcaption>
+                                </figure>
 
-                            <p class="featured-spec">
-                                Kodak Gold 200 <span>•</span> Canon Autoboy
-                                <span>•</span> ISO 200
-                            </p>
+                                <figure class="featured-stage-image" data-story-panel="1">
+                                    <img
+                                        src="assets/IMG_9638.JPG"
+                                        alt="Street scene with warm film tones"
+                                    />
+                                    <figcaption>
+                                        The city at walking pace, grain and glow intact.
+                                    </figcaption>
+                                </figure>
 
-                            <p class="featured-desc">
-                                The afternoon light filtered through the
-                                harbour, casting long shadows across the Opera
-                                House. There’s something about Sydney in
-                                December — the warmth, the stillness between the
-                                city’s pulse.
-                            </p>
+                                <figure class="featured-stage-image" data-story-panel="2">
+                                    <img
+                                        src="assets/melbourne/melb4.JPG"
+                                        alt="Melbourne urban frame on film"
+                                    />
+                                    <figcaption>
+                                        Melbourne shadows, held in a softer register.
+                                    </figcaption>
+                                </figure>
 
-                            <a
-                                class="featured-link"
-                                href="html/notes.html#roll-01"
-                            >
-                                View full roll <span class="arrow">›</span>
-                            </a>
+                                <figure class="featured-stage-image" data-story-panel="3">
+                                    <img
+                                        src="assets/sea1.jpg"
+                                        alt="Sea horizon captured on film"
+                                    />
+                                    <figcaption>
+                                        A final frame where the horizon does most of the talking.
+                                    </figcaption>
+                                </figure>
+                            </div>
                         </div>
 
-                        <div class="featured-grid">
-                            <a class="shot" href="html/gallery.html">
-                                <img
-                                    src="assets/sydney/IMG_2700.JPG"
-                                    alt="Sydney shot 1"
-                                />
-                            </a>
-                            <a class="shot" href="html/gallery.html">
-                                <img
-                                    src="assets/sydney/IMG_2701.JPG"
-                                    alt="Sydney shot 2"
-                                />
-                            </a>
-                            <a class="shot" href="html/gallery.html">
-                                <img
-                                    src="assets/syd1.jpg"
-                                    alt="Sydney shot 3"
-                                />
-                            </a>
-                            <a class="shot" href="html/gallery.html">
-                                <img
-                                    src="assets/river1.jpg"
-                                    alt="Sydney shot 4"
-                                />
-                            </a>
+                        <div class="featured-steps" aria-label="Recent work story steps">
+                            <article
+                                class="featured-step is-active"
+                                data-story-step
+                                data-story-target="0"
+                            >
+                                <p class="featured-step-label">Step 01</p>
+                                <h3 class="featured-step-title">Sydney, held in afternoon light</h3>
+                                <p class="featured-step-meta">
+                                    Kodak Gold 200 <span>•</span> Canon Autoboy Mini T
+                                    <span>•</span> December 2025
+                                </p>
+                                <p class="featured-step-copy">
+                                    The harbour always asks for patience. I waited for the water to
+                                    flatten, then let the frame hold the quiet rather than the postcard.
+                                </p>
+                                <a class="featured-step-link" href="html/gallery.html">
+                                    Open gallery <span class="arrow">›</span>
+                                </a>
+                            </article>
+
+                            <article
+                                class="featured-step"
+                                data-story-step
+                                data-story-target="1"
+                            >
+                                <p class="featured-step-label">Step 02</p>
+                                <h3 class="featured-step-title">Street warmth, a little imperfect</h3>
+                                <p class="featured-step-meta">
+                                    Fuji 400 <span>•</span> Brisbane <span>•</span> Winter walk
+                                </p>
+                                <p class="featured-step-copy">
+                                    I like when the frame keeps a slight imbalance. It feels closer to
+                                    memory than to documentation, and film is generous with that.
+                                </p>
+                                <span class="featured-step-note">Personal note — keep the pace slow.</span>
+                            </article>
+
+                            <article
+                                class="featured-step"
+                                data-story-step
+                                data-story-target="2"
+                            >
+                                <p class="featured-step-label">Step 03</p>
+                                <h3 class="featured-step-title">Melbourne in a lower key</h3>
+                                <p class="featured-step-meta">
+                                    Kodak Gold 200 <span>•</span> Olympus <span>•</span> City edges
+                                </p>
+                                <p class="featured-step-copy">
+                                    Some rolls are less about landmarks and more about how a place
+                                    settles into its corners. This one stayed with shadows, signs,
+                                    and long pauses between crossings.
+                                </p>
+                                <span class="featured-step-note">Archive tag — city study.</span>
+                            </article>
+
+                            <article
+                                class="featured-step"
+                                data-story-step
+                                data-story-target="3"
+                            >
+                                <p class="featured-step-label">Step 04</p>
+                                <h3 class="featured-step-title">A horizon to close the sequence</h3>
+                                <p class="featured-step-meta">
+                                    Portra 400 <span>•</span> Coastline <span>•</span> Dusk
+                                </p>
+                                <p class="featured-step-copy">
+                                    I usually end a roll on something quieter. A line of sea, a little
+                                    empty space, and enough room for the day to fade out properly.
+                                </p>
+                                <a class="featured-step-link" href="html/notes.html">
+                                    Read film notes <span class="arrow">›</span>
+                                </a>
+                            </article>
                         </div>
                     </div>
                 </div>
@@ -262,6 +334,14 @@
             </div>
         </footer>
 
-        <script src="app.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"
+            defer
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"
+            defer
+        ></script>
+        <script src="app.js" defer></script>
     </body>
 </html>
